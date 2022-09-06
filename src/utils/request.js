@@ -1,9 +1,7 @@
 import axios from 'axios'
 
 // 1. 创建axios对象
-const baseURL = ""
 const instance = axios.create({
-    baseURL: baseURL,
     timeout: 5000,
 });
 

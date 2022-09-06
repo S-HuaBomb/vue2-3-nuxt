@@ -1,48 +1,22 @@
+<!-- eslint-disable no-unused-vars -->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <header-vue></header-vue>
+    <footer-vue></footer-vue>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FooterVue from './components/common/Footer.vue';
+import HeaderVue from './components/common/Header.vue';
 import request from '@/utils/request'
-// import axios from 'axios'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FooterVue,
+    HeaderVue
   },
-  created() {
-    request({
-      url: '/api',
-      method: 'get',
-      params: {
-        searchText: 'John'
-      }
-    }).then(res => {
-      console.log('/api get:', res)
-    })
-
-    request({
-      url: '/loginUser',
-      method: 'post',
-      data: {
-        unsername: 'John',
-        password: 12345
-      }
-    }).then(res => {
-      console.log('/loginUser post:', res)
-    })
-
-    request({
-      url: '/users'
-    }).then(res => {
-      console.log('/users get:', res)
-    })
-  }
 }
 </script>
 
@@ -53,6 +27,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
