@@ -1,24 +1,9 @@
 <!-- eslint-disable no-unused-vars -->
 <template>
   <div id="app">
-    <header-vue></header-vue>
-    <footer-vue></footer-vue>
+    <router-view></router-view>
   </div>
 </template>
-
-<script>
-import FooterVue from './components/common/Footer.vue';
-import HeaderVue from './components/common/Header.vue';
-import request from '@/utils/request'
-
-export default {
-  name: 'App',
-  components: {
-    FooterVue,
-    HeaderVue
-  },
-}
-</script>
 
 <style>
 #app {

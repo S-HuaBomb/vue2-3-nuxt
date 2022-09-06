@@ -1,9 +1,10 @@
 const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
+module.exports = {
   transpileDependencies: true,
 
-  // 设置代理
   lintOnSave: false,
+
+    // 设置代理
   devServer: {
     open: true,
     proxy: {
@@ -12,5 +13,4 @@ module.exports = defineConfig({
       }
     }
   },
-  
-})
+}

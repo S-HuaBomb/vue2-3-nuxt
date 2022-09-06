@@ -11,19 +11,19 @@
         <div class="content-nav">
           <ul>
             <li>
-              <router-link to="/" style="cursor: pointer" class="actives"
-                >首 页</router-link
-              >
+              <router-link to="/" style="cursor: pointer" class="actives">
+                首 页
+              </router-link>
             </li>
             <li>
-              <router-link to="/course" style="cursor: pointer" class=""
-                >课 程</router-link
-              >
+              <router-link to="/course" style="cursor: pointer" class="">
+                课 程
+              </router-link>
             </li>
             <li>
-              <router-link to="/member" style="cursor: pointer" class=""
-                >会 员</router-link
-              >
+              <router-link to="/member" style="cursor: pointer" class="">
+                会 员
+              </router-link>
             </li>
           </ul>
         </div>
