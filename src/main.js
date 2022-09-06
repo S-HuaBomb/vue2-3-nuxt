@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import '@/utils/mock/mockOrigin'
+// import '@/utils/mock/mockOrigin'
 // import '@/utils/mockAdapter'
+import Element from 'element-ui'
+
+Vue.use(Element)
 
 Vue.config.productionTip = false
 
